@@ -17,11 +17,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
-        val person = Person("Alexis")
+        val person = Person("Alexis", "Azanza")
         val personDto = PersonMapper.INSTANCE.personToPersonDto(person)
 
         fab.setOnClickListener { view ->
-            Snackbar.make(view, personDto.name, Snackbar.LENGTH_LONG)
+            Snackbar.make(view, personDto.name + personDto.lastName, Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
         }
     }
