@@ -3,8 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="practice1.mapstruct.alexis.com.mapstructpractice1.MainActivity">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/actionMainActivity"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="@string/actionMainActivity"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/actionSecondActivity"
+        android:orderInCategory="100"
+        android:title="@string/actionSecondActivity"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/actionThirdActivity"
+        android:orderInCategory="100"
+        android:title="@string/actionThirdActivity"
         app:showAsAction="never" />
 </menu>
